@@ -1,0 +1,79 @@
+<html>
+<head>
+  <script src="/home/ukistu10/Documents/uki3/jQuery/jquery-3.3.1.js"></script>
+  <script src="/home/ukistu10/Documents/uki3/jQuery/jquery-3.3.1.min.js"></script>
+  <script src="/home/ukistu10/Documents/uki3/jQuery/jquery-3.3.1.min.map"></script>
+  <script>
+
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("img").hide();
+    });
+    $("#show").click(function(){
+        $("img").show();
+    });
+    $("#toggle").click(function(){
+        $("img").show();
+    });
+});
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+    });
+});
+$(document).ready(function(){
+    $("#flip1").click(function(){
+        $("#panel1").slideUp("slow");
+    });
+});
+$(document).ready(function(){
+    $("#flip2").click(function(){
+        $("#panel2").slideToggle("slow");
+    });
+});
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#divx").button(3000);
+    });
+});
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#div1").fadeOut(3000);
+    });
+});
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#divA").fadeToggle(3000);
+    });
+});
+</script>
+</head>
+<body>
+  <img src="/home/ukistu10/Desktop/images.jpeg"><br>
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<button id="toggle">Toggle</button>
+<br><br>
+<button id="flip1">SlideUp</button>
+<button id="panel1">Roses</button>
+
+<button id="flip">SlideDown</button>
+<button id="panel">Roses</button>
+
+<button id="flip2">slideToggle</button>
+<button id="panel2">Roses</button>
+<br><br>
+<button> Fade In</button>
+
+<div id="divx" style="width:40px;height:40px;display:none;background-color:red;"></div>
+
+
+<button>FadeOut</button>
+
+<div id="div1" style="width:40px;height:40px;background-color:red;"></div>
+
+<button>fadeToggle</button>
+
+<div id="divA" style="width:40px;height:40px;background-color:red;"></div>
+</body>
+</html>
